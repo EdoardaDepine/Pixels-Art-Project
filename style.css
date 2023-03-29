@@ -1,7 +1,11 @@
-td{
+.color{
 	padding: 20px;
 	margin: 0;
 	border: 1px solid black;
+}
+
+#black{
+  background-color: black;
 }
 
 #blue{
@@ -18,4 +22,12 @@ td{
 
 #purple{
   background-color: purple;
+}
+
+.pixel{
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  text-align: center;
 }
