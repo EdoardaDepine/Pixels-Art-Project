@@ -1,33 +1,33 @@
-.color{
-	padding: 20px;
-	margin: 0;
-	border: 1px solid black;
+.color {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
 }
 
-#black{
+#black {
   background-color: black;
 }
 
-#blue{
+#blue {
   background-color: blue;
 }
 
-#orange{
+#orange {
   background-color: orange;
 }
 
-#palevioletred{
+#palevioletred {
   background-color: palevioletred;
 }
 
-#purple{
+#purple {
   background-color: purple;
 }
 
-.pixel{
+.pixel {
   background-color: white;
   width: 40px;
   height: 40px;
   border: 1px solid black;
-  text-align: center;
 }
+
