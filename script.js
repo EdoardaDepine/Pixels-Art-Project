@@ -1,5 +1,6 @@
 const paletaCores = document.querySelector('#color-palette');
 const pixels = document.querySelectorAll('.pixel');
+const botao = document.querySelector('#jogar-novamente');
 
 paletaCores.addEventListener('click', function (event) {
   const corSelecionada = document.querySelector('.selected');
@@ -15,3 +16,7 @@ for (let i = 0; i < pixels.length; i++) {
     event.target.style.backgroundColor = background;
   });
 }
+
+botao.addEventListener('click', function () {
+  window.location.reload();
+});
