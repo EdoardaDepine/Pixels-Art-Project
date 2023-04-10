@@ -1,5 +1,5 @@
 const paletaCores = document.querySelector('#color-palette');
-const quadroPixels = document.querySelector('#pixel-board');
+const pixels = document.querySelectorAll('.pixel');
 
 paletaCores.addEventListener('click', function (event) {
   const corSelecionada = document.querySelector('.selected');
@@ -7,5 +7,11 @@ paletaCores.addEventListener('click', function (event) {
   event.target.classList.add('selected');
 });
 
-//adicionar a classe selected paleta cores ->
-//e remover do elemento anterior
+for (let i = 0; i < pixels.length; i++) {
+  pixels[i].addEventListener('click', function (event) {
+    const corSelecionada = document.querySelector('.selected');
+    const estilosCSS = window.getComputedStyle(corSelecionada);
+    const background = estilosCSS.getPropertyValue('background-color');
+    event.target.style.backgroundColor = background;
+  });
+}
